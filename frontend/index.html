@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏥 Hospital Management System Dashboard</h1>
+</header>
+
+<nav>
+    <button onclick="load('patients')">Patients</button>
+    <button onclick="load('doctors')">Doctors</button>
+    <button onclick="load('departments')">Departments</button>
+    <button onclick="load('doctor_departments')">Doctor Mapping</button>
+    <button onclick="load('appointments')">Appointments</button>
+    <button onclick="load('medical_records')">Medical Records</button>
+    <button onclick="load('prescriptions')">Prescriptions</button>
+    <button onclick="load('billing')">Billing</button>
+</nav>
+
+<main>
+    <section>
+        <h2>Add Patient</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="gender" placeholder="Gender">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="address" placeholder="Address">
+        <input type="date" id="dob">
+        <button onclick="addPatient()">Add Patient</button>
+    </section>
+
+    <hr>
+
+    <section id="output">
+        <h2>Welcome 👋</h2>
+        <p>Select a module to view data</p>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
